@@ -32,8 +32,10 @@ const Navbar = () => {
 
           {/* CTA */}
           <div className="flex items-center gap-4">
-            <a 
-              href="#demo" 
+            <a
+              href={import.meta.env.VITE_DEMO_URL || "http://localhost:8080"}
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center justify-center h-10 px-6 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 hover:shadow-[0_0_20px_hsl(var(--primary)/0.4)] transition-all duration-300"
             >
               Try Demo
